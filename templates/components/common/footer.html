@@ -1,0 +1,16 @@
+{{#if banners.bottom}}
+    <div class="banners" data-banner-location="bottom">
+        {{#each (limit banners.bottom_metadata 1)}}
+            <div class="banner" data-event-type="promotion" data-entity-id="{{this.id}}" data-name="{{this.banner-name}}" data-position="{{this.location}}" data-name="{{this.banner-name}}">
+                <div data-event-type="promotion-click">
+                    {{{this.content}}}
+                </div>
+            </div>
+        {{/each}}
+    </div>
+{{/if}}
+<footer class="footer" role="contentinfo">
+    <div id="react-footer"></div>
+    <script src="{{cdn 'assets/js/react/index.js'}}" type="text/babel"></script>
+    <script src="{{ cdn 'assets/js/react/common/Footer.jsx'}}" type="text/babel"></script>
+</footer>

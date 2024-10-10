@@ -1,0 +1,29 @@
+
+.banners{
+    background-color: #E0D4C5;
+    color: black;
+    // padding: 0;
+    margin: 0;
+}
+
+.navPages-action:hover{
+    text-decoration:underline;
+}
+
+.navPages{
+    color: black;
+}
+
+.navPages-action{
+    padding-bottom: 0;
+    color: black;
+}
+
+.footer, [class^=".footer-info-"] {
+    background-color: #978C7E;
+    color: white;
+}
+
+.footer-info-anker{
+    color: white;
+}
