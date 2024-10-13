@@ -1,16 +1,43 @@
-{{#if banners.bottom}}
-    <div class="banners" data-banner-location="bottom">
-        {{#each (limit banners.bottom_metadata 1)}}
-            <div class="banner" data-event-type="promotion" data-entity-id="{{this.id}}" data-name="{{this.banner-name}}" data-position="{{this.location}}" data-name="{{this.banner-name}}">
-                <div data-event-type="promotion-click">
-                    {{{this.content}}}
-                </div>
+<div class="contact-banners">
+    <div class="contact-banner row">
+        <div class="side left-side col-s-1 col-e-5">
+            <div class="div-text">
+                <p class="clain-text-parg-footer">Claim 10% off your first order</p>
             </div>
-        {{/each}}
+        </div>
+        <div class="side right-side col-s-6 col-e-12">
+            <div class="submit-data">
+                <form>
+                    <fieldset class="form-fieldset">
+                        <div class="form-field change">
+                            <label class="form-label is-srOnly">Email Address</label>
+                            <div class="form-preficPostfix wrap grid row">
+                                <input class="form-input control col-s-1 col-e-5">
+                                <input class="form-input control col-s-6 col-e-10">
+                                <button class="button button--primary form-preficPsotfix-button--postfix col-s-11 col-e-12">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25">
+                                        <title>Artboard-34</title>
+                                        <g id="Right-2" data-name="Right">
+                                            <polygon points="17.5 5.999 16.793 6.706 22.086 11.999 1 11.999 1 12.999 22.086 12.999 16.792 18.294 17.499 19.001 24 12.499 17.5 5.999" style="fill:#232326"></polygon>
+                                        </g> 
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
     </div>
-{{/if}}
+</div>
 <footer class="footer" role="contentinfo">
     <div id="react-footer"></div>
-    <script src="{{cdn 'assets/js/react/index.js'}}" type="text/babel"></script>
-    <script src="{{ cdn 'assets/js/react/common/Footer.jsx'}}" type="text/babel"></script>
+    <script src="{{ cdn 'assets/js/react/index.js' }}" type="text/babel"></script>
+    <script src="{{ cdn 'assets/js/react/common/Footer.jsx' }}" type="text/babel"></script>
 </footer>
+
+<div class="footer-banners">
+    <div class="footer-banner">
+        Manage Website Data Collection Preferences
+    </div>
+</div>

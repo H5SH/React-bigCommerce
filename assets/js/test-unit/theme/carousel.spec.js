@@ -6,13 +6,13 @@ describe('carousel', () => {
     it('should generate carousel WITH dots if carousel has more than one slide', () => {	
 		var multipleSlidesElement = $("<section class='heroCarousel' data-slick='{}'>\
 			<a href=''>\
-		        <div class='heroCarousel-slide  heroCarousel-slide--first'>\
-		            <div class='heroCarousel-image-wrapper' style='height: 42.868654311039485vw'>\
-		                <img class='heroCarousel-image' data-lazy='https://img.jpg?t=1532986020' alt='Our signature fixture that bends to your will' title='Our signature fixture that bends to your will' width='1241' height='532'>\
+		        <div id='carouselExample' class='carousel slide pointer-event'>\
+		            <div class='carousel-indicators' style='height: 42.868654311039485vw'>\
+		                <img class='carousel-inner' data-lazy='https://img.jpg?t=1532986020' alt='Our signature fixture that bends to your will' title='Our signature fixture that bends to your will' width='1241' height='532'>\
 		            </div>\
-		            <div class='heroCarousel-content'>\
-		    			<h1 class='heroCarousel-title'>The Task Lamp</h1>\
-		    			<p class='heroCarousel-description'>Our signature fixture that bends to your will</p>\
+		            <div class='carousal-item'>\
+		    			<h1 class='carousal-title'>The Task Lamp</h1>\
+		    			<p class='carousal-item active'>Our signature fixture that bends to your will</p>\
 		        		<span class='heroCarousel-action button button--primary button--large'>Shop Now</span>\
 					</div>\
 		        </div>\
